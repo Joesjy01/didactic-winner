@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Site de Musique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mon Site de Musique</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="accueil">
+    <h2>Bienvenue sur mon site de musique</h2>
+    <p>Découvrez vos musiques préférées et profitez de la meilleure qualité audio.</p>
+    <audio id="audioPlayer" controls>
+      <source src="votre-musique.mp3" type="audio/mpeg">
+      Votre navigateur ne supporte pas la balise audio.
+    </audio>
+  </section>
+  
+  <section id="playlist">
+    <h2>Playlist</h2>
+    <ul id="playlistList">
+      <li data-src="musique1.mp3">Musique 1</li>
+      <li data-src="musique2.mp3">Musique 2</li>
+      <li data-src="musique3.mp3">Musique 3</li>
+    </ul>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+      
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Mon Site de Musique. Tous droits réservés.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
